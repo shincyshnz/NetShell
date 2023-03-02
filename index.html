@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awsome icon CDN -->
+    <!-- Font Awesome icon CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Icon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -70,7 +70,7 @@
               </div>
             </div>
             <div class="component-links">
-              <a class="text-secondary" href="#"> Where to buy</a>
+              <a class="text-secondary" href="#"> <span id="buy">Where to</span> buy</a>
             </div>
             <div class="component-links">
               <a class="text-secondary" href="#"><i class="bi bi-globe"></i></a>
@@ -83,7 +83,9 @@
           </div>
         </div>
       </div>
+
       <hr class="mt-2 mb-0">
+
       <!-- Header Main Navigation Section -->
       <div id="header-main" class="container">
         <nav class="navbar navbar-expand-lg">
@@ -96,182 +98,117 @@
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <!-- Product Dropdown -->
-                <li class="nav-item dropdown">
-                  <div class="row"> 
-                    <div class="col-md-6 col-lg-9 mb-lg-0">
-                    <a class="nav-link dropdown-toggle" href="#" id="prdtCategories" role="menu" data-bs-toggle="dropdown" aria-expanded="false">
-                      PRODUCTS
-                    </a>
-
-                    <div class="container-fluid bg-light">
-                      <ul class="dropdown-menu mega-menu" aria-labelledby="prdtCategories">
-                        <li class="dropend has-megamenu list-group list-group-flush">
-                          <a href="#" class="list-group-item list-group-item-action">Fiber Optic Products</a>
-                              
-                          <div id="mega-submenu" class="dropdown-menu mt-0" aria-labelledby="mega-menu-right">
-                              <div class="d-flex">
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Cables & Patch Cords </p>
-                                    <a href="" class="list-group-item list-group-item-action">OS & OM Fiber Cables</a>
-                                    <a href="" class="list-group-item list-group-item-action">MPO Cables & Cassettes</a>
-                                    <a href="" class="list-group-item list-group-item-action">Indoor & Outdoor Fiber</a>
-                                  </div>
-                                </div>
-  
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Fiber Patch Panel & Accessories </p>
-                                    <a href="" class="list-group-item list-group-item-action">Fiber Patch Panel</a>
-                                    <a href="" class="list-group-item list-group-item-action">Fiber Enclosure</a>
-                                    <a href="" class="list-group-item list-group-item-action">Cable Management Solutions</a>
-                                    <a href="" class="list-group-item list-group-item-action">PigTail</a>
-                                    <a href="" class="list-group-item list-group-item-action">Connectors</a>
-                                  </div>
-                                </div>
-  
-                              </div>
-                          </div>
-                        </li>
-  
-                        <li class="dropend has-megamenu list-group list-group-flush">
-                        
-                          <a href="#" class="list-group-item list-group-item-action">Copper Products</a>
-                              
-                          <div id="mega-submenu" class="dropdown-menu mt-0" aria-labelledby="mega-menu-right">
-                              <div class="d-flex">
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">UTP Cables </p>
-                                    <a href="" class="list-group-item list-group-item-action">UTP Patch Cords</a>
-                                    <a href="" class="list-group-item list-group-item-action">UTP BOX /Roll Cables</a>
-                                  
-                                  </div>
-                                </div>
-  
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Copper Patch Panel & Accessories </p>
-                                    <a href="" class="list-group-item list-group-item-action">RJ/45 Modules</a>
-                                    <a href="" class="list-group-item list-group-item-action">Patch Panel</a>
-                                    <a href="" class="list-group-item list-group-item-action">RJ/45 Coupler Patch Panel</a>
-                                    <a href="" class="list-group-item list-group-item-action">Cable Management Solution</a>
-                                    
-                                  </div>
-                                </div>
-  
-                              </div>
-                          </div>
-                        </li>
-  
-                        <li class="dropend has-megamenu list-group list-group-flush">
-                          <a href="#" class="list-group-item list-group-item-action">Racks, Enclosers & PDUs</a>
-                              
-                          <div id="mega-submenu" class="dropdown-menu mt-0" aria-labelledby="mega-menu-right">
-                              <div class="d-flex flex-lg-row flex-md-column flex-wrap">
-                                <div class="flex-wrap">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Server & Network Rack</p>
-                                    <a href="" class="list-group-item list-group-item-action">DC Racks</a>
-                                    <a href="" class="list-group-item list-group-item-action">Classes of Server Racks</a>
-                                    <a href="" class="list-group-item list-group-item-action">Datacenter Containers</a>
-                                    <a href="" class="list-group-item list-group-item-action">Power Distribution Units(PDU)</a>
-                                  </div>
-                                </div>
-  
-                                <div class="flex-wrap">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Power Cords and Cables</p>
-                                    <a href="" class="list-group-item list-group-item-action">C13/C14 Power Cable</a>
-                                    <a href="" class="list-group-item list-group-item-action">C19/C20 Power Cable</a>
-                                  </div>
-                                </div>
-  
-                                <div class="flex-wrap">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Overhead Cable Management</p>
-                                    <a href="" class="list-group-item list-group-item-action">C13/C14 Power Cable</a>
-                                    <a href="" class="list-group-item list-group-item-action">C19/C20 Power Cable</a>
-                                  </div>
-                                </div>
-  
-                                <div class="flex-wrap">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Tools and Accessories</p>
-                                    <a href="" class="list-group-item list-group-item-action">Splicing Tools</a>
-                                    <a href="" class="list-group-item list-group-item-action">Testing Tools</a>
-                                  </div>
-                                </div>
-  
-                                <div class="flex-wrap">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">FEC Cabinets</p>
-                                    <a href="" class="list-group-item list-group-item-action">FEC Types</a>
-                                  </div>
-                                </div>
-  
-                              </div> 
-                          </div>
-                        </li>
-  
-                        <li class="dropend has-megamenu list-group list-group-flush">
-                          <a href="#" class="list-group-item list-group-item-action">Uninterrupted Power Supplies (UPS)</a>
-                              
-                          <div id="mega-submenu" class="dropdown-menu mt-0" aria-labelledby="mega-menu-right">
-                              <div class="d-flex">
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Types</p>
-                                    <a href="" class="list-group-item list-group-item-action">Rack Mountable UPS</a>
-                                    <a href="" class="list-group-item list-group-item-action">Tower UPSs</a>
-                                    <a href="" class="list-group-item list-group-item-action">Desktop UPSs</a>
-                                    <a href="" class="list-group-item list-group-item-action">UPS Management Software</a>
-                                  </div>
-                                </div>
-  
-                              </div>
-                          </div>
-                        </li>
-  
-                        <li class="dropend has-megamenu list-group list-group-flush">
-                          <a href="#" class="list-group-item list-group-item-action">Industrial Switches and Media Converters</a>
-                              
-                          <div id="mega-submenu" class="dropdown-menu mt-0" aria-labelledby="mega-menu-right">
-                              <div class="d-flex">
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Industrial Network Switches </p>
-                                    <a href="" class="list-group-item list-group-item-action">L2 Managed Industrial PoE Switches</a>
-                                    <a href="" class="list-group-item list-group-item-action">L2 Unmanaged Industrial PoE Switches</a>
-                                    <a href="" class="list-group-item list-group-item-action">L3 Managed Industrial PoE/ Non-PoE Switches</a>
-                                  </div>
-                                </div>
-  
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Industrial PCs </p>
-                                    
-                                  </div>
-                                </div>
-                                <div class="flex-fill">
-                                  <div class="list-group list-group-flush">
-                                    <p class="mb-0 list-group-item text-uppercase fw-bolder">Media Converters </p>
-                                    
-                                  </div>
-                                </div>
-  
-                              </div>
-                          </div>
-                        </li>
-                      
-                      </ul>
-                    </div>
-
-                    </div>
-                      
-                  </div>
-                  
+                <li class="nav-item">
+                    <a id="mainProductLink" class="nav-link" href="javascript:void(0);">PRODUCTS <!--<i class="fa-solid fa-caret-down"></i> --> </a> 
+                    <ul class="mega_menu">
+                        <div class="container-fluid brand-category-content product-category-contain">
+                            <div class="product-menu" >
+                                <ul class="product-category">
+                                    <li class="active">
+                                        <a href="javascript:void(0);">Fiber Optic Products</a>
+                                        <div class="product-mega-menu hover">
+                                            <ul class="flex-fill" class="flex-fill">
+                                                <h6>Cables & Patch Cords</h6>
+                                                <li><a href="" class="">OS & OM Fiber Cables</a></li>
+                                                <li><a href="" class="">MPO Cables & Cassettes</a></li>
+                                                <li><a href="" class="">Indoor & Outdoor Fiber</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6>Fiber Patch Panel & Accessories </h6>
+                                                <li><a href="" class="">Fiber Patch Panel</a></li>
+                                                <li><a href="" class="">Fiber Enclosure</a></li>
+                                                <li><a href="" class="">Cable Management Solutions</a></li>
+                                                <li><a href="" class="">PigTail</a></li>
+                                                <li><a href="" class="">Connectors</a></li>
+                                              </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#tabshop1">Copper Products</a>
+                                        <div class="product-mega-menu">
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">UTP Cables</a></h6>
+                                                <li><a href="javascript:void(0);">UTP Patch Cords</a></li>
+                                                <li><a href="javascript:void(0);">UTP BOX /Roll Cables</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Copper Patch Panel & Accessories</a></h6>
+                                                <li><a href="javascript:void(0);">RJ/45 Modules</a></li>
+                                                <li><a href="javascript:void(0);">Patch Panel</a></li>
+                                                <li><a href="javascript:void(0);">RJ/45 Coupler Patch Panel</a></li>
+                                                <li><a href="javascript:void(0);">Cable Management Solution</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#tabshop1">Racks, Enclosers & PDUs</a>
+                                        <div class="product-mega-menu">
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Server & Network Rack</a></h6>
+                                                <li><a href="javascript:void(0);">DC Racks</a></li>
+                                                <li><a href="javascript:void(0);">Classes of Server Racks</a></li>
+                                                <li><a href="javascript:void(0);">Datacenter Containers</a></li>
+                                                <li><a href="javascript:void(0);">Power Distribution Units(PDU)</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Power Cords and Cables</a></h6>
+                                                <li><a href="javascript:void(0);">C13/C14 Power Cable</a></li>
+                                                <li><a href="javascript:void(0);">C19/C20 Power Cable</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Overhead Cable Management</a></h6>
+                                                <li><a href="javascript:void(0);">C13/C14 Power Cable</a></li>
+                                                <li><a href="javascript:void(0);">C19/C20 Power Cable</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Tools and Accessories</a></h6>
+                                                <li><a href="javascript:void(0);">Splicing Tools</a></li>
+                                                <li><a href="javascript:void(0);">Testing Tools</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">FEC Cabinets</a></h6>
+                                                <li><a href="javascript:void(0);">FEC Types</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#tabshop1">Uninterrupted Power Supplies (UPS)</a>
+                                        <div class="product-mega-menu">
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Types</a></h6>
+                                                <li><a href="javascript:void(0);">Rack Mountable UPS</a></li>
+                                                <li><a href="javascript:void(0);">Tower UPSs</a></li>
+                                                <li><a href="javascript:void(0);">Desktop UPSs</a></li>
+                                                <li><a href="javascript:void(0);">UPS Management Software</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#tabshop1">Industrial Switches and Media Converters</a>
+                                        <div class="product-mega-menu">
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Industrial Network Switches</a></h6>
+                                                <li><a href="javascript:void(0);">L2 Managed Industrial PoE Switches</a></li>
+                                                <li><a href="javascript:void(0);">L2 Unmanaged Industrial PoE Switches</a></li>
+                                                <li><a href="javascript:void(0);">L3 Managed Industrial PoE/ Non-PoE Switches</a></li>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Industrial PCs</a></h6>
+                                            </ul>
+                                            <ul class="flex-fill">
+                                                <h6><a href="javascript:void(0);">Media Converters</a></h6>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
+
+
+
+
                 <!-- Solutions Dropdown -->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="solutionCategories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -335,7 +272,7 @@
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-theme-blue-primary rounded-5" type="submit"><i class="bi bi-search"></i></button>
+                <button class="btn btn-outline-theme-blue-primary rounded-5" type="submit"><i class="fa fa-search"></i></button>
               </form>
             </div>
           </div>
@@ -709,7 +646,7 @@
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="false"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> 
         </div>
     </section>
 
@@ -862,6 +799,8 @@
 
     <!-- Template Script -->
     <script src="assets/js/script.js"></script>
+
+
 
   </body>
 

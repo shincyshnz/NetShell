@@ -2,43 +2,6 @@
 
     'use strict';
 
-    // Enable hover on desktop only
-    if (window.innerWidth > 992) {
-        const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'));
-        const dropendElementList = [].slice.call(document.querySelectorAll('.dropend'));
-        // For each dropdown menu, disable click event and add event listener for mouse enter and mouse leave
-        dropdownElementList.forEach(function (dropdown) {
-            dropdown.addEventListener('click', function (event) {
-                event.stopPropagation();
-                event.preventDefault();
-            });
-            dropdown.addEventListener('mouseenter', function () {
-                dropdown.classList.add('show');
-                dropdown.querySelector('.dropdown-menu').classList.add('show');
-            });
-            dropdown.addEventListener('mouseleave', function () {
-                dropdown.classList.remove('show');
-                dropdown.querySelector('.dropdown-menu').classList.remove('show');
-            });
-        });
-        // For each dropend menu, disable click event and add event listener for mouse enter and mouse leave
-        dropendElementList.forEach(function (dropend) {
-            dropend.addEventListener('click', function (event) {
-                event.stopPropagation();
-                event.preventDefault();
-            });
-            dropend.addEventListener('mouseenter', function () {
-                dropend.classList.add('show');
-                dropend.querySelector('.dropdown-menu').classList.add('show');
-            });
-            dropend.addEventListener('mouseleave', function () {
-                dropend.classList.remove('show');
-                dropend.querySelector('.dropdown-menu').classList.remove('show');
-            });
-        });
-    }
-
-
     /* -----------------------Dynamically adjusting height of Products Dropdown Megamenu------------------------------------ */
     const headerNavListItems = document.querySelectorAll('#header-main > nav > ul > li');
     const categoryListItems = document.querySelectorAll('.product-category > li');
@@ -78,45 +41,62 @@
             changeHeightContainer(item);
         });
 
-        if (window.innerWidth < 600) {
-            item.addEventListener('mouseenter', function (event) {
-                event.stopPropagation();
-                event.preventDefault();
-            });
-            item.addEventListener('click', () => {
-                changeHeightContainer(item);
-            });
-        }
-
     });
 
     categoryListItems.forEach((item) => {
         item.addEventListener('mouseenter', () => {
             changeHeightList(item);
         });
+    });
 
-        if (window.innerWidth < 600) {
-            item.addEventListener('mouseenter', function (event) {
+    // window.addEventListener("load", function () {
+    //     let activeMegaMenuHeight = document.querySelector(".product-category>li.active .product-mega-menu.hover").offsetHeight;
+    //     let containerHeight = document.querySelector(".product-category>li").closest(".product-category-contain").offsetHeight;
+
+    //     if (activeMegaMenuHeight > containerHeight) {
+    //         document.querySelector(".product-category>li").closest(".product-category-contain").style.height = activeMegaMenuHeight + "px";
+    //     } else {
+    //         document.querySelector(".product-category>li").closest(".product-category-contain").style.height = containerHeight + "px";
+    //     }
+    // });
+
+    /* -----------------------// End Dynamically adjusting height of Products Dropdown Megamenu //------------------------------------ */
+
+
+    // Enable hover on desktop only
+    if (window.innerWidth > 992) {
+        const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown'));
+        const dropendElementList = [].slice.call(document.querySelectorAll('.dropend'));
+        // For each dropdown menu, disable click event and add event listener for mouse enter and mouse leave
+        dropdownElementList.forEach(function (dropdown) {
+            dropdown.addEventListener('click', function (event) {
                 event.stopPropagation();
                 event.preventDefault();
             });
-            item.addEventListener('click', () => {
-                changeHeightList(item);
+            dropdown.addEventListener('mouseenter', function () {
+                dropdown.classList.add('show');
+                dropdown.querySelector('.dropdown-menu').classList.add('show');
             });
-        }
-    });
-
-    window.addEventListener("load", function () {
-        let activeMegaMenuHeight = document.querySelector(".product-category>li.active .product-mega-menu.hover").offsetHeight;
-        let containerHeight = document.querySelector(".product-category>li").closest(".product-category-contain").offsetHeight;
-
-        if (activeMegaMenuHeight > containerHeight) {
-            document.querySelector(".product-category>li").closest(".product-category-contain").style.height = activeMegaMenuHeight + "px";
-        } else {
-            document.querySelector(".product-category>li").closest(".product-category-contain").style.height = containerHeight + "px";
-        }
-    });
-
-    /* -----------------------// End Dynamically adjusting height of Products Dropdown Megamenu //------------------------------------ */
+            dropdown.addEventListener('mouseleave', function () {
+                dropdown.classList.remove('show');
+                dropdown.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+        // For each dropend menu, disable click event and add event listener for mouse enter and mouse leave
+        dropendElementList.forEach(function (dropend) {
+            dropend.addEventListener('click', function (event) {
+                event.stopPropagation();
+                event.preventDefault();
+            });
+            dropend.addEventListener('mouseenter', function () {
+                dropend.classList.add('show');
+                dropend.querySelector('.dropdown-menu').classList.add('show');
+            });
+            dropend.addEventListener('mouseleave', function () {
+                dropend.classList.remove('show');
+                dropend.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+    }
 
 })();
