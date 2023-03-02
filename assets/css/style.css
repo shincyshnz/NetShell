@@ -1,0 +1,264 @@
+/* -----------HEADER----------- */
+/* -----------Top Navigation----------- */
+header{
+  background-color: white;
+}
+header a{
+  text-decoration: none;
+}
+
+#header-components a{
+  padding: 0.5rem;
+}
+
+.dropdown-item:hover,
+.nav-item a:hover,
+#header-components a:hover,
+.trending-posts .card-link:hover{
+  font-weight: 500;
+  transform: scale(1);
+}
+
+.component-links:not(:last-child){
+  border-right: solid 1px grey;
+}
+
+/* -----------Main Navigation----------- */
+
+/* .mega-menu{
+  padding: 0.5rem; 
+ 
+ }  */
+
+
+/* -----------Hero Section----------- */
+
+  .carousel-item img {
+    width: 100%;
+    height: 70vh;
+    filter: brightness(40%);
+  }
+  /* .carousel-item{
+    background-color: rgba(); 
+  } */
+  .carousel-caption {
+    width: 40%;
+    height: 63vh;
+    text-align: left;
+    /* padding: 150px 20px; */
+    padding: 8% 0 8% 0 ;
+  }
+  .carousel-caption h5{
+    font-size: 3rem;
+  }
+  .carousel-caption :nth-child(2) {
+    font-size: 1.8rem;
+    color: rgb(0, 190, 176);
+  }
+  .carousel-caption :nth-child(3) {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:white;
+  }
+  .carousel-caption a {
+    background-color: rgb(0, 190, 176);
+    box-shadow: none;
+    border: rgb(0, 0, 0) 50%;
+    color: rgb(255, 255, 255);
+  }
+  .carousel-caption a:hover {
+    background-color: rgb(1, 113, 105);
+    border: rgb(0, 0, 0) 50%;
+  }
+ 
+  /*----------Section Title---------*/
+
+  .section-title {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 15px;
+    color: black;
+  }
+  
+  .section-title h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: rgb(207, 209, 212);
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: rgb(7, 35, 81);
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+/* ------------------Section Solution------------ */
+
+.solutions{
+  padding-bottom: 30px;
+  /* background-color: #e1e5ea; */
+}
+
+.solutions .card-body{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+.solutions .card-link{
+  padding-top: 5px;
+}
+.solutions .card-link>i:hover{
+  transform: scale(1.5);
+}
+.solutions .card>img{
+  height:400px;
+}
+.solutions .card-body{
+  background-color: rgba(7, 35, 81,0.9);
+}
+.solutions .cardText{
+  align-self: center;
+  text-align: justify;
+}
+/* ------------------Section Industries--------- */
+.cardText{
+  align-self: center;
+}
+
+/* ------------------Section Why us--------- */
+.whyUs .card{
+  border:none;
+}
+
+.whyUs .card-img-top{
+  padding-left: 1rem;
+}
+
+/* ------------------Section Trending Post------------ */
+.trending-posts img{
+  width: 100%;
+  max-height:180px;
+}
+
+.trending-posts .card-link{
+  color: rgb(1, 113, 105);
+}
+
+.featured-tag{
+  color: red;
+}
+
+.trending-posts .carousel-control-next-icon,
+.trending-posts .carousel-control-prev-icon{
+  background-color: black;
+  border-radius: 50%;
+  padding: 1rem;
+}
+/* ------------------Section Footer------------ */
+footer {
+  color:rgb(255, 255, 255);
+}
+
+footer .nav-item>a,
+footer .nav-item a:hover{
+  color: rgb(241, 241, 241);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: rgb(255, 255, 255);
+}
+
+
+
+/* ============ desktop view Header============ */
+@media all and (min-width: 992px) {
+
+  /* ------Main Navigation----- */
+  .navbar .has-megamenu{
+    position:static!important;
+
+  }
+  .navbar .mega-menu{
+    top: 2rem;
+    left:0;
+    right:0;
+    margin-top:0;
+    width: 350px;
+    min-height: 320px;
+  }
+
+  #mega-submenu{
+    left: 100%;
+    top: 0;
+    width: 900px;
+    min-height: 320px;
+  }
+  
+
+}		
+/* ============ desktop view end============ */
+
+
+/* ============ mobile view Header============ */
+@media(max-width: 991px){
+  /* ---------Main Navigation ------ */
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+  .navbar .mega-menu{
+    width:100%; 
+  }
+
+  /* ---------Hero ------ */
+
+  .carousel-item img {
+    height: 90%;
+  }
+  .carousel-caption {
+    width: 90%;
+    left: 1rem;
+  }
+  .carousel-caption :nth-child(2) {
+    font-size: 1.3rem;
+  }
+  .carousel-caption :nth-child(3) {
+    font-size: 0.8rem;
+  }
+  .carousel-caption h5{
+    font-size: 2rem;
+  }
+
+  /* ---------Industries ------ */
+ .cardText:nth-of-type(odd){
+    order: 1;
+  }
+  .cardImage,
+  .cardText{
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+}
+
+/* ============ mobile view end============ */

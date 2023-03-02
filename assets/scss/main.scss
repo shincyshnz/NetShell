@@ -1,0 +1,111 @@
+//custom variables
+// $primary : rgb(7, 35, 81);
+// $light: rgb(189, 198, 214);
+
+
+// import the function and variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+//Theme-color
+$custom-theme-colors:(
+    "theme-blue-primary":rgb(7, 35, 81),
+    "theme-blue-light":rgba(236, 240, 247, 0.727),
+    "btnLight": rgb(210, 234, 254),
+);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+/* -------- Font Size --------- */
+$font-size-base: 1rem;
+
+/*--------- Header ------------*/
+// $headings-font-family:  "Roboto", sans-serif;
+// $navbar-toggler-border-radius: 0;
+// $nav-link-font-size: 0.95rem;
+// $nav-link-font-weight: 400;
+
+// $dropdown-border-radius: 0;
+// $dropdown-link-active-bg: rgb(7, 35, 81); 
+// $dropdown-font-size:  1rem;
+
+// $hr-margin-y: 0;
+// $btn-font-size: 0.8rem;
+
+
+/* ------ import bootstrap------- */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --horizontal-line-color:rgb(217, 217, 217);
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+text-decoration: none;
+color: rgb(0, 0, 0);
+}
+
+ul{
+padding-left: 0;
+}
+
+li{
+list-style: none;
+}
+
+/*-------------------- Partner Logo---------------------*/
+$animationSpeed: 30s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+		// width: calc(100% / 6);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+	}
+}
+
+/*-------------------- End Partner Logo---------------------*/
