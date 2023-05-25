@@ -1,6 +1,6 @@
 (function () {
 
-    // 'use strict';
+    'use strict';
 
     const productsLink = document.querySelector('.main-product-link');
     const megaMenu = document.querySelector('.mega-menu');

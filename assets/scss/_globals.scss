@@ -1,0 +1,23 @@
+:root {
+  $bs-body-font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}

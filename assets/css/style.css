@@ -1,48 +1,52 @@
-
 /* -----------HEADER----------- */
 /* -----------HEADER Top Navigation----------- */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
-header {
+/* header {
   background-color: white;
 }
 
-.header-components a{
+.header-components a {
   padding: 0.5rem;
 }
 
 .dropdown-item:hover,
-/* .nav-item a:hover, */
 .header-components a:hover,
-.trending-posts .card-link:hover{
+.trending-posts .card-link:hover {
   font-weight: 500;
   transform: scale(1);
 }
-  
-.component-links:not(:last-child){
+
+.component-links:not(:last-child) {
   border-right: solid 1px grey;
-}
-  
-  /* ----------- HEADER Main Navigation----------- */
+} */
 
-.dropdown-menu{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+/* ----------- HEADER Main Navigation----------- */
+
+/* .dropdown-menu {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.main-product-link::after{
+.main-product-link::after {
   display: inline-block;
   margin-left: 0.255rem;
   vertical-align: 0.255rem;
   content: "";
   border-top: 0.3rem solid;
-  border-right: 0.3rem solid rgba(0,0,0,0);
+  border-right: 0.3rem solid rgba(0, 0, 0, 0);
   border-bottom: 0;
-  border-left: 0.3rem solid rgba(0,0,0,0);
+  border-left: 0.3rem solid rgba(0, 0, 0, 0);
 }
 
 .mega-menu {
   display: none;
   position: absolute;
   min-width: 70%;
+  max-width: max-content;
   padding: 0;
   background: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -54,9 +58,9 @@ header {
   top: 100%;
 }
 
-.mega-menu.display{
-    display: block;
-    top: 100%;
+.mega-menu.display {
+  display: block;
+  top: 100%;
 }
 
 .product-category-li > a {
@@ -74,7 +78,7 @@ header {
 }
 
 .product-menu > ul {
-  max-height:100%;
+  max-height: 100%;
   overflow: hidden;
   width: 30%;
   padding: 1rem;
@@ -82,7 +86,7 @@ header {
 
 .product-mega-menu {
   display: none;
-  background:transparent ;
+  background: transparent;
   padding: 0;
   width: 70%;
   -webkit-transition: 0.3s;
@@ -95,8 +99,8 @@ header {
 }
 
 .product-mega-menu.hover {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-category-li {
@@ -106,7 +110,7 @@ flex-wrap: wrap;
 }
 
 .active > a {
-background-color: rgba(7, 35, 81,0.9);
+  background-color: rgba(7, 35, 81, 0.9);
   color: #fff;
 }
 
@@ -114,7 +118,7 @@ background-color: rgba(7, 35, 81,0.9);
   padding: 1rem;
   float: left;
   max-height: 100%;
-  overflow: initial;
+  overflow-y: auto;
 }
 
 .product-mega-menu > ul > h6 {
@@ -134,16 +138,16 @@ background-color: rgba(7, 35, 81,0.9);
 }
 
 .product-mega-menu li a:hover {
-  color:  rgba(7, 35, 81);
+  color: rgba(7, 35, 81);
 }
 
-.dropdown-menu{
-top: 100%;
-padding: 20px 20px;
-border: none; 
+.dropdown-menu {
+  top: 100%;
+  padding: 20px 20px;
+  border: none;
 }
 
-.dropdown-item{
+.dropdown-item {
   color: #7d7d7d;
   font-size: 13px;
   text-transform: capitalize;
@@ -152,213 +156,263 @@ border: none;
   padding: 0.5rem 1rem;
 }
 
-.dropdown-item:hover{
-color: #ffffff;
-background-color: rgba(7, 35, 81,0.9);
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: rgba(7, 35, 81, 0.9);
+} */
+
+/* -----------Hero Section----------- */
+
+.carousel-item img {
+  width: 100%;
+  height: 60vh;
+  filter: brightness(40%);
+  object-fit: fill;
 }
-  
-  /* -----------Hero Section----------- */
-  
-    .carousel-item img {
-      width: 100%;
-      height: 70vh;
-      filter: brightness(40%);
-    }
-    .carousel-caption {
-      width: 40%;
-      height: 63vh;
-      text-align: left;
-      padding: 8% 0 8% 0 ;
-    }
-    .carousel-caption h5{
-      font-size: 3rem;
-    }
-    .carousel-caption :nth-child(2) {
-      font-size: 1.8rem;
-      color: rgb(0, 190, 176);
-    }
-    .carousel-caption :nth-child(3) {
-      font-size: 1.1rem;
-      font-weight: 300;
-      color:white;
-    }
-    .carousel-caption a {
-      background-color: rgb(0, 190, 176);
-      box-shadow: none;
-      border: rgb(0, 0, 0) 50%;
-      color: rgb(255, 255, 255);
-    }
-    .carousel-caption a:hover {
-      background-color: rgb(1, 113, 105);
-      border: rgb(0, 0, 0) 50%;
-    }
-   
-    /*----------Section Title---------*/
-  
-    .section-title {
-      text-align: center;
-      padding-top: 3rem;
-      padding-bottom: 15px;
-      color: black;
-    }
-    
-    .section-title h2 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-      position: relative;
-    }
-    
-    .section-title h2::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 120px;
-      height: 1px;
-      background: rgb(207, 209, 212);
-      bottom: 1px;
-      left: calc(50% - 60px);
-    }
-    
-    .section-title h2::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 40px;
-      height: 3px;
-      background: rgb(7, 35, 81);
-      bottom: 0;
-      left: calc(50% - 20px);
-    }
-    
-  /* ------------------Section Solution------------ */
-  
-  .solutions{
-    padding-bottom: 30px;
-  }
-  
-  .solutions .card{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    transition: all .3s ease-in-out;
-  }
-  
-  .solutions .card:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transform: scale(1.05);
-  }
-  
-  .solutions .card-body{
-    display: flex;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
+.carousel-caption {
+  width: 40%;
+  height: 50vh;
+  text-align: left;
+  padding: 5% 0 8% 0;
+}
+.carousel-caption h5 {
+  font-size: 3rem;
+}
+.carousel-caption :nth-child(2) {
+  font-size: 1.8rem;
+  color: rgb(0, 190, 176);
+}
+.carousel-caption :nth-child(3) {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}
+.carousel-caption a {
+  background-color: rgb(0, 190, 176);
+  box-shadow: none;
+  border: rgb(0, 0, 0) 50%;
+  color: rgb(255, 255, 255);
+}
+.carousel-caption a:hover {
+  background-color: rgb(1, 113, 105);
+  border: rgb(0, 0, 0) 50%;
+}
+/* --------------Breadcrumbs-------- */
+.breadcrumbs {
+  padding: 15px 0;
+  background-color: #f3f8fa;
+  min-height: 40px;
+}
+
+.breadcrumbs h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol .current-page {
+  color: #868686;
+}
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6a6a6a;
+  font-weight: 500;
+  content: "<";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
   }
 
-  .solutions .card-link{
-    padding-top: 5px;
+  .breadcrumbs ol {
+    display: block;
   }
 
-  .solutions .card-link>i:hover{
-    transform: scale(1.5);
+  .breadcrumbs ol li {
+    display: inline-block;
   }
+}
+/*----------Section Title---------*/
 
-  .solutions .card>img{
-    height:400px;
-  }
+.section-title {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 15px;
+  color: black;
+}
 
-  .solutions .card-body{
-    background-color: rgba(7, 35, 81,0.9);
-  }
+.section-title h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
 
-  .solutions .cardText{
-    align-self: center;
-    text-align: justify;
-  }
-  /* ------------------Section Industries--------- */
-  .cardText{
-    align-self: center;
-  }
-  
-  /* ------------------Section Why us--------- */
-  .whyUs .card{
-    border:none;
-  }
-  
-  .whyUs .card-img-top{
-    padding-left: 1rem;
-  }
-  
-  /* ------------------Section Trending Post------------ */
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: rgb(207, 209, 212);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
 
-  .trending-posts img{
-    width: 100%;
-    height:15rem;
-  }
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: rgb(7, 35, 81);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
 
-  .trending-posts .card-body {
-    height: 12rem;
-  }
-  
-  .trending-posts .card-link{
-    color: rgb(1, 113, 105);
-  }
-  
-  .trending-posts .carousel-control-next-icon,
-  .trending-posts .carousel-control-prev-icon{
-    background-color: black;
-    border-radius: 50%;
-    padding: 1rem;
-  }
+/* ------------------Section Solution------------ */
 
+.solutions {
+  padding-bottom: 30px;
+}
 
-  /* ------------------Section Footer------------ */
+.solutions .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.3s ease-in-out;
+}
 
-  footer {
-    color:rgb(255, 255, 255);
-  }
-  
-  footer .nav-item>a,
-  footer .nav-item a:hover{
-    color: rgb(241, 241, 241);
-  }
-  
-  .bi {
-    vertical-align: -.125em;
-    fill: rgb(255, 255, 255);
-  }
-  
-  /* ============ mobile view Header============ */
-  
-@media(max-width: 992px){
-  
-/* ---------component links ------ */
-  #buy{
+.solutions .card:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: scale(1.05);
+}
+
+.solutions .card-body {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+
+.solutions .card-link {
+  padding-top: 5px;
+}
+
+.solutions .card-link > i:hover {
+  transform: scale(1.5);
+}
+
+.solutions .card > img {
+  height: 400px;
+}
+
+.solutions .card-body {
+  background-color: rgba(7, 35, 81, 0.9);
+}
+
+.solutions .cardText {
+  align-self: center;
+  text-align: justify;
+}
+/* ------------------Section Industries--------- */
+.cardText {
+  align-self: center;
+}
+
+/* ------------------Section Why us--------- */
+.whyUs .card {
+  border: none;
+}
+
+.whyUs .card-img-top {
+  padding-left: 1rem;
+}
+
+/* ------------------Section Trending Post------------ */
+
+.trending-posts img {
+  width: 100%;
+  height: 15rem;
+}
+
+.trending-posts .card-body {
+  height: 12rem;
+}
+
+.trending-posts .card-link {
+  color: rgb(1, 113, 105);
+}
+/* .trending-posts .card-link:hover {
+  font-weight: 500;
+  transform: scale(1);
+} */
+.trending-posts .carousel-control-next-icon,
+.trending-posts .carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* ------------------Section Footer------------ */
+
+footer {
+  color: rgb(255, 255, 255);
+}
+
+footer .nav-item > a,
+footer .nav-item a:hover {
+  color: rgb(241, 241, 241);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: rgb(255, 255, 255);
+}
+
+/* ============ mobile view Header============ */
+
+@media (max-width: 992px) {
+  /* ---------component links ------ */
+  #buy {
     display: none;
   }
 
-/* -------- Header ---- */
-  
-.header-main nav ul li ul.mega-menu{
-  position: static;
-}
+  /* -------- Header ---- */
 
-.header-main nav > ul > li {
-  margin-bottom: 10px;
-}
+  .header-main nav ul li ul.mega-menu {
+    position: static;
+  }
 
-.product-menu > ul,
-.product-menu > ul > li{
-width: 100%;
-}
+  .header-main nav > ul > li {
+    margin-bottom: 10px;
+  }
 
-.product-mega-menu {
-  background-color: rgba(188, 215, 252, 0.544);
-  width: 100%;
-  position: static;
-}
-  
+  .product-menu > ul,
+  .product-menu > ul > li {
+    width: 100%;
+  }
+
+  .product-mega-menu {
+    background-color: rgba(188, 215, 252, 0.544);
+    width: 100%;
+    position: static;
+  }
+
   /* ---------Hero ------ */
-  
+
   .carousel-item img {
     height: 90%;
   }
@@ -372,19 +426,16 @@ width: 100%;
   .carousel-caption :nth-child(3) {
     font-size: 0.8rem;
   }
-  .carousel-caption h5{
+  .carousel-caption h5 {
     font-size: 2rem;
   }
-  
+
   /* ---------Industries ------ */
   .cardImage,
-  .cardText{
+  .cardText {
     margin-bottom: 10px;
     padding: 10px;
-  } 
-  
-  
   }
-  
-  /* ============ mobile view end============ */
-  
+}
+
+/* ============ mobile view end============ */
