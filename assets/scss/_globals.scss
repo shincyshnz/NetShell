@@ -1,5 +1,4 @@
 :root {
-  $bs-body-font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
@@ -7,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {

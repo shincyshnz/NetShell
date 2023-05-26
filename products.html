@@ -170,7 +170,7 @@
                             class="product-category-li product-category-li--1"
                             data-tab="1"
                           >
-                            <a href="javascript:void(0);"
+                            <a href="#"
                               >Fiber Optic Products</a
                             >
                             <div class="product-mega-menu">
@@ -619,61 +619,11 @@
       <div class="section-title">
         <h2>FeaturedProduct</h2>
       </div>
-
-      <div class="container d-flex g-3">
-        <div class="w-30">
-          <div class="container"></div>
-        </div>
-        <!---------------------------------->
-        <div class="card float-right">
-          <div class="row">
-            <div class="col-sm-5">
-              <img
-                class="d-block w-100"
-                style="width: 100px; height: 150px"
-                src="assets/img/network-switch-with-cables.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-sm-7">
-              <div class="card-block" style="font-size: smaller">
-                <p>Copy paste the HTML and CSS.</p>
-                <p>Change around the content for awsomeness</p>
-                <br />
-                <a href="#" class="btn btn-primary btn-sm float-right"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!---------------------------------->
-      </div>
-    </section>
-
-    <!------------- Quick links ------------->
-    <section class="quick-links">
-      <div class="section-title">
-        <h2>Quick Links</h2>
-      </div>
-
-      <div class="container">
-        <div class="d-flex justify-content-between flex-md-wrap mb-5">
-          <div><a href="#">Products</a></div>
-          <div><a href="#">Find a Distributor</a></div>
-          <div><a href="#">Find an Installer</a></div>
-          <div><a href="#">Resources</a></div>
-          <div><a href="#">Tech Support</a></div>
-        </div>
-      </div>
-    </section>
-
     <!------------- PRODUCT FEATURES ------------->
-    <div class="container-fluid featured-product-container">
+    <div class="container-fluid px-lg-5 featured-product-container">
       <div class="row">
         <!-- Filter -->
-        <aside class="col-md-3">
-          <!-- Filter -->
+        <aside class="col-md-3 mb-3">
           <div class="card">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
@@ -702,11 +652,11 @@
                           class="form-control"
                           placeholder="Search"
                         />
-                        <div class="input-group-append">
-                          <button class="btn btn-light" type="button">
+                        <!-- <div class="input-group-append"> -->
+                          <button class="btn btn-btnLight" type="button">
                             <i class="fa fa-search"></i>
                           </button>
-                        </div>
+                        <!-- </div> -->
                       </div>
                     </form>
 
@@ -883,20 +833,21 @@
         <!-- Product Lists -->
         <main class="col-md-9">
           <header class="border-bottom mb-4 pb-3">
-            <div class="form-inline">
-              <span class="mr-md-auto">32 Items found </span>
+            <span class="mr-md-auto">32 Items found </span>
+            <div
+              class="form-inline d-flex justify-content-evenly align-content-center gap-2 mt-2"
+            >
               <select class="mr-2 form-control">
                 <option>Latest items</option>
                 <option>Trending</option>
                 <option>Most Popular</option>
                 <option>Cheapest</option>
               </select>
-              <div class="btn-group">
+              <div class="btn-group mr-2">
                 <a
                   href="#"
                   class="btn btn-outline-secondary"
                   data-toggle="tooltip"
-                  title=""
                   data-original-title="List view"
                 >
                   <i class="fa fa-bars"></i
@@ -905,7 +856,6 @@
                   href="#"
                   class="btn btn-outline-secondary active"
                   data-toggle="tooltip"
-                  title=""
                   data-original-title="Grid view"
                 >
                   <i class="fa fa-th"></i
@@ -917,226 +867,182 @@
 
           <div class="row">
             <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <span class="badge badge-danger"> NEW </span>
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title">Great item name goes here</a>
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
-                      <del class="price-old">$1980</del>
+              <div class="container d-flex g-3">
+                <div class="card float-right mb-3">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img
+                        class="d-block w-100 mx-3"
+                        style="width: 12rem; height: 12rem"
+                        src="assets/img/products/patchcord1.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- price-wrap.// -->
+                    <div class="col-sm-7 m-0">
+                      <div class="card-block px-2" style="font-size: smaller">
+                        <p class="mt-3" >Serial No</p>
+                        <h4>Product Name</h4>
+                        <p>Description</p>
+                          <br />
+                          <a href="#" class="btn btn-theme-blue-light btn-sm float-right mt-0"
+                            >Know More</a
+                          >
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </div>
             <!-- col.// -->
 
             <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
+              <div class="container d-flex g-3">
+                <div class="card float-right mb-3">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img
+                        class="d-block w-100 mx-3"
+                        style="width: 12rem; height: 12rem"
+                        src="assets/img/products/patchcord1.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- price-wrap.// -->
+                    <div class="col-sm-7 m-0">
+                      <div class="card-block px-2" style="font-size: smaller">
+                        <p class="mt-3" >Serial No</p>
+                        <h4>Product Name</h4>
+                        <p>Description</p>
+                          <br />
+                          <a href="#" class="btn btn-theme-blue-light btn-sm float-right mt-0"
+                            >Know More</a
+                          >
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </div>
             <!-- col.// -->
 
             <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
+              <div class="container d-flex g-3">
+                <div class="card float-right mb-3">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img
+                        class="d-block w-100 mx-3"
+                        style="width: 12rem; height: 12rem"
+                        src="assets/img/products/patchcord1.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- price-wrap.// -->
+                    <div class="col-sm-7 m-0">
+                      <div class="card-block px-2" style="font-size: smaller">
+                        <p class="mt-3" >Serial No</p>
+                        <h4>Product Name</h4>
+                        <p>Description</p>
+                          <br />
+                          <a href="#" class="btn btn-theme-blue-light btn-sm float-right mt-0"
+                            >Know More</a
+                          >
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </div>
             <!-- col.// -->
 
             <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
+              <div class="container d-flex g-3">
+                <div class="card float-right mb-3">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img
+                        class="d-block w-100 mx-3"
+                        style="width: 12rem; height: 12rem"
+                        src="assets/img/products/patchcord1.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- price-wrap.// -->
+                    <div class="col-sm-7 m-0">
+                      <div class="card-block px-2" style="font-size: smaller">
+                        <p class="mt-3" >Serial No</p>
+                        <h4>Product Name</h4>
+                        <p>Description</p>
+                          <br />
+                          <a href="#" class="btn btn-theme-blue-light btn-sm float-right mt-0"
+                            >Know More</a
+                          >
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </div>
             <!-- col.// -->
 
             <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
+              <div class="container d-flex g-3">
+                <div class="card float-right mb-3">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img
+                        class="d-block w-100 mx-3"
+                        style="width: 12rem; height: 12rem"
+                        src="assets/img/products/patchcord1.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- price-wrap.// -->
+                    <div class="col-sm-7 m-0">
+                      <div class="card-block px-2" style="font-size: smaller">
+                        <p class="mt-3" >Serial No</p>
+                        <h4>Product Name</h4>
+                        <p>Description</p>
+                          <br />
+                          <a href="#" class="btn btn-theme-blue-light btn-sm float-right mt-0"
+                            >Know More</a
+                          >
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </div>
             <!-- col.// -->
 
             <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
+              <div class="container d-flex g-3">
+                <div class="card float-right mb-3">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img
+                        class="d-block w-100 mx-3"
+                        style="width: 12rem; height: 12rem"
+                        src="assets/img/products/patchcord1.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- price-wrap.// -->
-                  </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
-            </div>
-            <!-- col.// -->
-
-            <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
-                </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
+                    <div class="col-sm-7 m-0">
+                      <div class="card-block px-2" style="font-size: smaller">
+                        <p class="mt-3" >Serial No</p>
+                        <h4>Product Name</h4>
+                        <p>Description</p>
+                          <br />
+                          <a href="#" class="btn btn-theme-blue-light btn-sm float-right mt-0"
+                            >Know More</a
+                          >
+                        </p>
+                      </div>
                     </div>
-                    <!-- price-wrap.// -->
                   </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
-            </div>
-            <!-- col.// -->
-
-            <div class="col-md-4">
-              <figure class="card card-product-grid">
-                <div class="img-wrap">
-                  <img
-                    src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
-                    class="img-fluid"
-                  />
-                  <a class="btn-overlay" href="#"
-                    ><i class="fa fa-search-plus"></i> Quick view</a
-                  >
                 </div>
-                <!-- img-wrap.// -->
-                <figcaption class="info-wrap">
-                  <div class="fix-height">
-                    <a href="#" class="title"
-                      >Product name goes here just for demo item</a
-                    >
-                    <div class="price-wrap mt-2">
-                      <span class="price">$1280</span>
-                    </div>
-                    <!-- price-wrap.// -->
-                  </div>
-                  <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                </figcaption>
-              </figure>
+              </div>
             </div>
             <!-- col.// -->
           </div>
@@ -1159,7 +1065,25 @@
       </div>
     </div>
     <!---------- // PRODUCT FEATURES // --------->
+  
+  </section>
 
+    <!------------- Quick links ------------->
+    <section class="quick-links bg-theme-blue-light">
+      <div class="section-title">
+        <h2>Quick Links</h2>
+      </div>
+
+      <div class="container">
+        <div class="d-flex justify-content-between flex-md-wrap pb-4">
+          <div><a href="#">Products</a></div>
+          <div><a href="#">Find a Distributor</a></div>
+          <div><a href="#">Find an Installer</a></div>
+          <div><a href="#">Resources</a></div>
+          <div><a href="#">Tech Support</a></div>
+        </div>
+      </div>
+    </section>
     <!-- -------------Footer----------- -->
     <footer class="py-1 bg-theme-blue-primary">
       <div class="container">

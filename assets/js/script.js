@@ -19,12 +19,12 @@
         });
     };
 
-    const deactivateClick = function (element) {
-        element.addEventListener('click', function (e) {
-            e.stopPropagation();
-            e.preventDefault();
-        });
-    };
+    // const deactivateClick = function (element) {
+    //     element.addEventListener('click', function (e) {
+    //         e.stopPropagation();
+    //         e.preventDefault();
+    //     });
+    // };
 
     const categoryLinkActivate = function (clicked, productMegaMenu) {
         //Guard clause
@@ -72,7 +72,7 @@
 
         //disable click event and activate hover
         dropdownElementList.forEach(function (dropdown) {
-            deactivateClick(dropdown);
+            // deactivateClick(dropdown);
 
             dropdown.addEventListener('mouseenter', function () {
                 dropdown.classList.add('show');
@@ -84,8 +84,8 @@
             });
         });
 
-        deactivateClick(productsLink);
-        deactivateClick(productCategory);
+        // deactivateClick(productsLink);
+        // deactivateClick(productCategory);
 
         productsLink.addEventListener('mouseenter', function (e) {
             removeActive();
@@ -109,4 +109,11 @@
         })
     }
 
+    console.log(document.querySelectorAll(".product-mega-menu a"));
+    document.querySelectorAll(".product-mega-menu a").forEach(node => {
+        console.log(node.firstChild.data);
+        node.firstChild.addEventListener('click', (e) => {
+            console.log(e.target);
+        })
+    })
 })();
